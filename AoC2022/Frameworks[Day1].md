@@ -96,7 +96,7 @@ This framework highlights the detailed approach it provides when looking at an a
 
 https://mitre-attack.github.io/attack-navigator//#layerURL=https%3A%2F%2Fattack.mitre.org%2Fgroups%2FG0008%2FG0008-enterprise-layer.json
 
-![[t3-attack-navigator.png]]
+[![[t3-attack-navigator.png]]](https://www.trellix.com/en-us/img/security-awareness/mitre-attack-cloud.png)
 
 
 ## Cyber Kill Chain
