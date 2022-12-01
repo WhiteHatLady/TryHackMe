@@ -105,7 +105,7 @@ A key concept of this framework was adopted from the military with the terminolo
 
 There are seven stages outlined by the Cyber Kill Chain, enhancing visibility and understanding of an adversary’s tactics, techniques and procedures.
 
-![[1e0cdd3b3f3c33c18d67f25aad84e618.png]]
+[![[1e0cdd3b3f3c33c18d67f25aad84e618.png]]](https://www.trellix.com/en-us/img/security-awareness/mitre-attack-cloud.png)
 
 Dive further into the kill chain by checking out the dedicated [Cyber Kill Chain room](https://tryhackme.com/room/cyberkillchainzmt).
 
