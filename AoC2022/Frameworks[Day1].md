@@ -11,6 +11,10 @@
 
 1. [MITRE room](https://tryhackme.com/room/mitre).
 2. [Cyber Kill Chain room](https://tryhackme.com/room/cyberkillchainzmt).
+3. [Unified Kill Chain](https://tryhackme.com/room/unifiedkillchain)
+4. [Cyber Defence Frameworks module](https://tryhackme.com/module/cyber-defence-frameworks)
+
+ Unified Kill Chain, Cyber Kill Chain, MITRE, or the whole Cyber Defence Frameworks module
 
 # Security Frameworks - theory
 
@@ -164,5 +168,33 @@ The Confidentiality, Integrity and Availability (CIA) of assets or services are 
 Having gone through the UKC with Santa’s security team, it is evident that better defensive strategies must be implemented to raise resilience against attacks.
 
 Your task is to help the Elves solve a puzzle left for them to identify who is trying to stop Christmas. Click the **View Site** button at the top of the task to launch the static site in split view. You may have to open the static site on a new window and zoom in for a clearer view of the puzzle pieces.
+
+![obraz](https://user-images.githubusercontent.com/90008283/205156714-a4f754bf-c204-4080-8156-03618d11ba10.png)
+
+ Hello Santa. For years, you have delivered happiness and joy to millions around the world during the festivities. However, you have remained untested and the time has finally arrived to turn the Best Festival Company into Grumpy and Miserable. I have taken over your website and warehouse, and it is time to turn Christmas into Chaos.
+
+So, want to play a game to know who is behind all the misery? 
+
+### Cykle:  IN
+
+![obraz](https://user-images.githubusercontent.com/90008283/205157129-0c9e1be6-680a-4363-90f8-be359e16aa6f.png)
+
+### Cykle: Through
+
+![obraz](https://user-images.githubusercontent.com/90008283/205157355-54d9d3a7-6174-492f-96eb-9f8a0b898526.png)
+
+### Cykle: Out
+
+![obraz](https://user-images.githubusercontent.com/90008283/205157602-d32ffd1e-00ce-43df-a7a6-d8072bdfb577.png)
+
+### Flaga + ![obraz](https://user-images.githubusercontent.com/90008283/205157946-c24f31cd-daed-4e7c-8cf4-b216ee9e761e.png)
+
+![obraz](https://user-images.githubusercontent.com/90008283/205157858-2a1f7dd0-53ec-43a7-9536-b020fac5bb60.png)
+
+
+
+
+
+
 
 
