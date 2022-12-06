@@ -1,1 +1,16 @@
+# Rooms
+1. Aoc2022: https://tryhackme.com/room/adventofcyber4
+2. Phising module: https://tryhackme.com/module/phishing
+3. Endpoint Security Monitoring Module: https://tryhackme.com/module/endpoint-security-monitoring
+
+# Gdzie przechowywane są logi? 
+
+
+# Komendy: 
+
+<table>
+
+<tbody><tr><td><b>Field</b></td><td><b>Details</b></td></tr><tr><td style="text-align:left"><b>From</b></td><td><p style="text-align:left">The sender's address.</p></td></tr><tr><td style="text-align:left"><b>To</b></td><td><p style="text-align:left">The receiver's address, including CC and BCC.</p></td></tr><tr><td style="text-align:left"><b>Date</b></td><td><p style="text-align:left">Timestamp, when the email was <b>sent.</b></p></td></tr><tr><td style="text-align:left"><b>Subject</b></td><td><p style="text-align:left">The subject of the email.</p></td></tr><tr><td style="text-align:left"><b>Return Path</b></td><td><p style="text-align:left">The return address of the reply, a.k.a. "Reply-To".</p><p style="text-align:left">If you reply to an email, the reply will go to the address mentioned in this field.</p></td></tr><tr><td style="text-align:left"><b><span>Domain Key and <a class="nJmz2kDV glossary-term" onclick="initPopOver('DKIM', 'nJmz2kDV')">DKIM</a> Signatures</span></b></td><td><p style="text-align:left;color:rgb(14, 16, 26);background:transparent;margin-top:0pt;margin-bottom:0pt;list-style-type:disc"><span style="background:transparent;margin-top:0pt;margin-bottom:0pt">Email signatures are provided by email services to identify and authenticate emails.</span></p></td></tr><tr><td style="text-align:left"><b><span><a class="YKWb6oZo glossary-term" onclick="initPopOver('SPF', 'YKWb6oZo')">SPF</a></span></b></td><td><p style="text-align:left">Shows the server that was used to send the email.</p><p style="text-align:left">It will help to understand if the actual server is used to send the email from a specific domain.</p></td></tr><tr><td style="text-align:left"><b>Message-ID</b></td><td><p style="text-align:left">Unique ID of the email.</p></td></tr><tr><td style="text-align:left"><b>MIME-Version</b></td><td><p style="text-align:left"><span>Used <a class="qfd2tPuc glossary-term" onclick="initPopOver('MIME', 'qfd2tPuc')">MIME</a> version. </span></p><p style="text-align:left">It will help to understand the delivered "non-text" contents and attachments.</p></td></tr><tr><td style="text-align:left"><b>X-Headers</b></td><td><p style="text-align:left;color:rgb(14, 16, 26);background:transparent;margin-top:0pt;margin-bottom:0pt;list-style-type:disc"><span style="background:transparent;margin-top:0pt;margin-bottom:0pt">The receiver mail providers usually add these fields.</span></p><p style="text-align:left">Provided info is usually experimental and can be different according to the mail provider.</p></td></tr><tr><td style="text-align:left"><b>X-Received</b></td><td><p style="text-align:left">Mail servers that the email went through.</p></td></tr><tr><td style="text-align:left"><b>X-Spam Status</b></td><td><p style="text-align:left">Spam score of the email.</p></td></tr><tr><td style="text-align:left"><b>X-Mailer</b></td><td><p style="text-align:left">Email client name.</p></td></tr></tbody>
+</table>
+
 
