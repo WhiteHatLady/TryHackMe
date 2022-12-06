@@ -3,14 +3,55 @@
 2. Phising module: https://tryhackme.com/module/phishing
 3. Endpoint Security Monitoring Module: https://tryhackme.com/module/endpoint-security-monitoring
 
-# Gdzie przechowywane są logi? 
+# Jak Analizować emaile? 
 
+|              Pole              	|                                                                                                                                                                            Szczegóły                                                                                                                                                                           	|   	|   	|   	|
+|:------------------------------:	|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|---	|---	|---	|
+| From                           	| adres nadawcy                                                                                                                                                                                                                                                                                                                                                  	|   	|   	|   	|
+| To                             	| adres obiorcy, włączając w to CC (do wiadomości), BCC (kopia ukryta)                                                                                                                                                                                                                                                                                           	|   	|   	|   	|
+| Date                           	| Data nadania                                                                                                                                                                                                                                                                                                                                                   	|   	|   	|   	|
+| Subject                        	| Temat emaila                                                                                                                                                                                                                                                                                                                                                   	|   	|   	|   	|
+| Return Path                    	| Adres zwrotny odpowiedzi, a.k.a. "Reply-To". Jeśli odpowiesz na wiadomość e-mail, odpowiedź trafi na adres podany w tym polu.                                                                                                                                                                                                                                  	|   	|   	|   	|
+| Domain Key and DKIM Signatures 	| DKIM (DomainKeys Identified Mail) jest standardem bezpieczeństwa poczty elektronicznej zaprojektowanym, aby upewnić się, że wiadomości nie są zmieniane w tranzycie pomiędzy serwerem wysyłającym a odbiorcą. Podpisy email są dostarczane przez usługi email w celu identyfikacji i uwierzytelnienia emaili.                                                  	|   	|   	|   	|
+| SPF                            	| Sender Policy Framework (SPF) to metoda uwierzytelniania wiadomości e-mail zaprojektowana w celu wykrywania fałszowania adresów nadawców podczas dostarczania wiadomości e-mail. Pokazuje serwer, który został użyty do wysłania wiadomości e-mail.Pomoże to zrozumieć, czy rzeczywisty serwer jest używany do wysyłania wiadomości e-mail z określonej domeny 	|   	|   	|   	|
+| Message-ID                     	| Unikalny identyfikator wiadomości e-mail.                                                                                                                                                                                                                                                                                                                      	|   	|   	|   	|
+| MIME-Version                   	| Używana wersja MIME.Pomoże to zrozumieć dostarczoną "nietekstową" zawartość i załączniki. Multipurpose Internet Mail Extensions (MIME) to standard internetowy, który rozszerza format wiadomości e-mail o obsługę tekstu w zestawach znaków innych niż ASCII, a także załączników audio, wideo, obrazów i programów użytkowych.                               	|   	|   	|   	|
+| X-Headers                      	| Dostawcy poczty do odbiorników zazwyczaj dodają te pola. Dostarczone informacje są zazwyczaj eksperymentalne i mogą być różne w zależności od dostawcy poczty.Dostawcy poczty do odbiorników zazwyczaj dodają te pola. Dostarczone informacje są zazwyczaj eksperymentalne i mogą być różne w zależności od dostawcy poczty.                                   	|   	|   	|   	|
+| X-Received                     	| Serwery pocztowe, przez które przeszła wiadomość                                                                                                                                                                                                                                                                                                               	|   	|   	|   	|
+| X-Spam Status                  	| Spam score wiadomości e-mail                                                                                                                                                                                                                                                                                                                                   	|   	|   	|   	|
+| X-Mailer                       	| Nazwa klienta poczty elektronicznej.                                                                                                                                                                                                                                                                                                                           	|   	|   	|   	|
+
+
+# Tools: 
+1. Sublime Text: https://www.sublimetext.com/3
+2. emlAnylazer 
+- online tool: https://eml-analyzer.herokuapp.com/ 
+- instalacja na Ubuntu: https://pypi.org/project/eml-analyzer/
+```
+https://pypi.org/project/eml-analyzer/
+```
+3. Emailrep - online tool:  https://emailrep.io/   - email reputation  (OSINT)
+4. Virustotal - onine tool: https://www.virustotal.com/gui/home/upload    -> A service that provides a cloud-based detection toolset and sandbox environment.
+5. InQust - https://inquest.net/ -> A service provides network and file analysis by using threat analytics. -> 
+6. IPinfo.io https://ipinfo.io/  -> A service that provides detailed information about an IP address by focusing on geolocation data and service provider.
+7. Talos Reputation  -> An IP reputation check service is provided by Cisco Talos.
 
 # Komendy: 
 
-<table>
+## emlAnalyzer 
 
-<tbody><tr><td><b>Field</b></td><td><b>Details</b></td></tr><tr><td style="text-align:left"><b>From</b></td><td><p style="text-align:left">The sender's address.</p></td></tr><tr><td style="text-align:left"><b>To</b></td><td><p style="text-align:left">The receiver's address, including CC and BCC.</p></td></tr><tr><td style="text-align:left"><b>Date</b></td><td><p style="text-align:left">Timestamp, when the email was <b>sent.</b></p></td></tr><tr><td style="text-align:left"><b>Subject</b></td><td><p style="text-align:left">The subject of the email.</p></td></tr><tr><td style="text-align:left"><b>Return Path</b></td><td><p style="text-align:left">The return address of the reply, a.k.a. "Reply-To".</p><p style="text-align:left">If you reply to an email, the reply will go to the address mentioned in this field.</p></td></tr><tr><td style="text-align:left"><b><span>Domain Key and <a class="nJmz2kDV glossary-term" onclick="initPopOver('DKIM', 'nJmz2kDV')">DKIM</a> Signatures</span></b></td><td><p style="text-align:left;color:rgb(14, 16, 26);background:transparent;margin-top:0pt;margin-bottom:0pt;list-style-type:disc"><span style="background:transparent;margin-top:0pt;margin-bottom:0pt">Email signatures are provided by email services to identify and authenticate emails.</span></p></td></tr><tr><td style="text-align:left"><b><span><a class="YKWb6oZo glossary-term" onclick="initPopOver('SPF', 'YKWb6oZo')">SPF</a></span></b></td><td><p style="text-align:left">Shows the server that was used to send the email.</p><p style="text-align:left">It will help to understand if the actual server is used to send the email from a specific domain.</p></td></tr><tr><td style="text-align:left"><b>Message-ID</b></td><td><p style="text-align:left">Unique ID of the email.</p></td></tr><tr><td style="text-align:left"><b>MIME-Version</b></td><td><p style="text-align:left"><span>Used <a class="qfd2tPuc glossary-term" onclick="initPopOver('MIME', 'qfd2tPuc')">MIME</a> version. </span></p><p style="text-align:left">It will help to understand the delivered "non-text" contents and attachments.</p></td></tr><tr><td style="text-align:left"><b>X-Headers</b></td><td><p style="text-align:left;color:rgb(14, 16, 26);background:transparent;margin-top:0pt;margin-bottom:0pt;list-style-type:disc"><span style="background:transparent;margin-top:0pt;margin-bottom:0pt">The receiver mail providers usually add these fields.</span></p><p style="text-align:left">Provided info is usually experimental and can be different according to the mail provider.</p></td></tr><tr><td style="text-align:left"><b>X-Received</b></td><td><p style="text-align:left">Mail servers that the email went through.</p></td></tr><tr><td style="text-align:left"><b>X-Spam Status</b></td><td><p style="text-align:left">Spam score of the email.</p></td></tr><tr><td style="text-align:left"><b>X-Mailer</b></td><td><p style="text-align:left">Email client name.</p></td></tr></tbody>
-</table>
+```
+emlAnalyzer -i /path-to-file/filename --header --html -u --text --extract-all
+```
+
+`-i` path-to-file 
+`--header`  	Show header
+`-u ` Show URLs
+`--text`  Show cleartext data
+`extract-all` Extract all attachments
+
+## emllAnylazer: 
+emlAnalyzer -i Urgent\:.eml --header --html -u --text --extract-all
+
 
 
