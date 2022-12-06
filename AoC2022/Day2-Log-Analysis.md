@@ -5,6 +5,9 @@
 
 # Gdzie przechowywane są logi? 
 
+| Linux      |           Windows            |
+| ---------- |:----------------------------:|
+| `/var/log` | Event Viewer -> Windows Logs |
 
 # Komendy: 
 
