@@ -50,8 +50,19 @@ emlAnalyzer -i /path-to-file/filename --header --html -u --text --extract-all
 `--text`  Show cleartext data
 `extract-all` Extract all attachments
 
-## emllAnylazer: 
-emlAnalyzer -i Urgent\:.eml --header --html -u --text --extract-all
+
+# Practise
+
+6.1+6.2+6.3+6.4 
+
+
+6.5 Mamy base64 i enkdowujemy to 
+
+
+
+
+
+
 
 
 
