@@ -32,7 +32,7 @@ grep -r "helloworld" mydirectory 	# Search recursively. For example, search all 
     Username: elfmcblue
     Password: tryhackme!
 ```
-6.1. I connect with ssh: 
+2.1. I connect with ssh: 
 
 ```
 ssh elfmcblue@10.10.206.213
@@ -42,7 +42,7 @@ And I enter the password.
 ![obraz](https://user-images.githubusercontent.com/90008283/205988434-f416d3fe-b5df-4d89-aa19-6d7544697c13.png)
 
 
-6.2. + 6.3 Wyświeltenie plików w folderze gdzie się obecnie znajdujemy. 
+2.2. + 2.3 Wyświeltenie plików w folderze gdzie się obecnie znajdujemy. 
 
 ```
 elfmcblue@day-2-log-analysis:~$ pwd
@@ -50,7 +50,7 @@ elfmcblue@day-2-log-analysis:~$ pwd
 elfmcblue@day-2-log-analysis:~$ ls
 SSHD.log  webserver.log
 ```
-6.4 + 6.5 + 6.6 Sprawdzenie ile linijek ma ten plik i czy warto mi go otwierać w jakimkolwiek edytorze
+2.4 + 2.5 + 2.6 Sprawdzenie ile linijek ma ten plik i czy warto mi go otwierać w jakimkolwiek edytorze
 
 ```
 elfmcblue@day-2-log-analysis:~$ grep -i -E " 200 " webserver.log    # wyświetlenie lisyu który na pewno został pobrany - kod 200 
@@ -58,7 +58,7 @@ elfmcblue@day-2-log-analysis:~$ grep -i -E " 200 " webserver.log    # wyświetle
 ```
 ![obraz](https://user-images.githubusercontent.com/90008283/205992483-71270796-16dc-4e9f-b090-03fc7a72f861.png)
 
-6.7 Znajduję flagę w katalogu w którym obecnie się znajduję
+2.7 Znajduję flagę w katalogu w którym obecnie się znajduję
 ```
 elfmcblue@day-2-log-analysis:~$ grep -i -r "thm{" .
 ```
